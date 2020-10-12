@@ -1,5 +1,5 @@
 $fontColor: #0091aa;
-$colorHeading: #be4a14;
+$colorHeading: #000000;
 #content  // div with id: content
 {
     color: $fontColor;
@@ -12,4 +12,30 @@ h2
 
 h1{
     @extend h2;
+}
+
+.InputContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.InputContainer input[type="button"], .InputContainer select {
+    cursor: pointer;
+}
+
+.Results {
+    max-width: 60%;
+}
+
+.Results ul {
+    padding: 0;
+    border: 1px solid #FFC0CB;
+}
+
+.Results ul li {
+    padding: 5px;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 150px 5fr;
+    list-style: none;
 }
